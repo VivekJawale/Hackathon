@@ -59,6 +59,10 @@
 .parallax_3 div p {
   animation: 3s slide-left;
 }
+button:hover{
+    border: 2px solid #000;
+    font-size: large;
+}
 @keyframes slide-right {
   from {
     margin-left: -100%;

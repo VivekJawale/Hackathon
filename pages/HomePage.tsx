@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
+import Navbar from "./components/Navbar"
 
 const HomePage = () => {
   return (
     <>
+    <Navbar/>
       <div className="parallax">
         <div className="bubbles">
           <div className="bubble"></div>
