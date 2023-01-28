@@ -1,98 +1,125 @@
-
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 .parallax {
-    /* The image used */
-/* Set a specific height */
-    min-height: 100vh; 
-    background: rgb(13,204,197);
-background: -moz-radial-gradient(circle, rgba(13,204,197,0.9697128851540616) 45%, rgba(0,0,255,0.6783963585434174) 100%);
-background: -webkit-radial-gradient(circle, rgba(13,204,197,0.9697128851540616) 45%, rgba(0,0,255,0.6783963585434174) 100%);
-background: radial-gradient(circle, rgba(13,204,197,0.9697128851540616) 45%, rgba(0,0,255,0.6783963585434174) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0dccc5",endColorstr="#0000ff",GradientType=1);
-     overflow: hidden;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  min-height: 100vh;
+  background: rgb(13, 204, 197);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(13, 204, 197, 0.9697128851540616) 45%,
+    rgba(0, 0, 255, 0.6783963585434174) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(13, 204, 197, 0.9697128851540616) 45%,
+    rgba(0, 0, 255, 0.6783963585434174) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(13, 204, 197, 0.9697128851540616) 45%,
+    rgba(0, 0, 255, 0.6783963585434174) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0dccc5",endColorstr="#0000ff",GradientType=1);
+  overflow: hidden;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax_2 {
+  background-image: url(https://www.learnupon.com/wp-content/uploads/@2x-Blog-Multimodal-Learning-Animation.gif);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.parallax_2 div h3 {
+  animation: 3s slide-right;
+}
+.parallax_2 div p {
+  animation: 3s slide-left;
+}
+.parallax_3 div h3 {
+  animation: 3s slide-right;
+}
+.parallax_3 div p {
+  animation: 3s slide-left;
+}
+.parallax_3 div h3 {
+  animation: 3s slide-right;
+}
+.parallax_3 div p {
+  animation: 3s slide-left;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
   }
-  .parallax_2 {
-    background-image: url(https://www.learnupon.com/wp-content/uploads/@2x-Blog-Multimodal-Learning-Animation.gif) ;
-    min-height:100vh; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 40px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  to {
+    margin-left: 0%;
   }
-  .parallax_2 div h3{
-    animation: 3s slide-right;
+}
+@keyframes slide-left {
+  from {
+    margin-right: -100%;
   }
-  .parallax_2 div p{
-    animation: 3s slide-left;
+  to {
+    margin-right: 0%;
   }
-  @keyframes slide-right {
-    from {
-      margin-left: -100%;
-    }
-    to {
-      margin-left: 0%;
-    }
-  }
-  @keyframes slide-left {
-    from {
-      margin-right: -100%;
-    }
-    to {
-      margin-right: 0%;
-    }
-  }
-  .parallax_3 div{
-    animation: fadeIn 5s;
-  }
-  .parallax_4 div{
-    animation: fadeIn 5s;
-  }
-  
+}
+.parallax_3 div {
+  animation: fadeIn 5s;
+}
+.parallax_4 div {
+  animation: fadeIn 5s;
+}
+
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
   }
-  .parallax_3 {
-    background-image: url(https://w0.peakpx.com/wallpaper/972/48/HD-wallpaper-stack-of-books-blue-background-education-concepts-books-library-school-learning-concepts.jpg) ;
-    min-height:100vh; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 40px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  100% {
+    opacity: 1;
   }
-  .parallax_4 {
-    background-image: url(https://vidhilegalpolicy.in/wp-content/uploads/2021/10/Screenshot-143.png) ;
-    min-height:100vh; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 40px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .animate-charcter
-{
-   text-transform: uppercase;
+}
+.parallax_3 {
+  background-image: url(https://w0.peakpx.com/wallpaper/972/48/HD-wallpaper-stack-of-books-blue-background-education-concepts-books-library-school-learning-concepts.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.parallax_4 {
+  background-image: url(https://vidhilegalpolicy.in/wp-content/uploads/2021/10/Screenshot-143.png);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.animate-charcter {
+  text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
     #0dccc5 0%,
@@ -109,7 +136,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0dccc5",endCo
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-      font-size: 50px;
+  font-size: 50px;
 }
 
 @keyframes textclip {
@@ -119,180 +146,179 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0dccc5",endCo
 }
 
 .bubbles {
-    position: absolute;
-    width: 99%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    line-height: 1.5;
-    color: #000000;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    /* margin-bottom: 720px; */
-  }
-  .bubble {
-    position: absolute;
+  position: absolute;
+  width: 99%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  line-height: 1.5;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  /* margin-bottom: 720px; */
+}
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  width: 40px;
+  height: 40px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: rise 5s infinite ease-in;
+}
+.bubble:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  animation-duration: 5s;
+}
+.bubble:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  left: 35%;
+  animation-duration: 5s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+.bubble:nth-child(5) {
+  width: 35px;
+  height: 35px;
+  left: 55%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(6) {
+  width: 45px;
+  height: 45px;
+  left: 65%;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+.bubble:nth-child(7) {
+  width: 90px;
+  height: 90px;
+  left: 70%;
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(8) {
+  width: 25px;
+  height: 25px;
+  left: 80%;
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(9) {
+  width: 15px;
+  height: 15px;
+  left: 70%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(10) {
+  width: 90px;
+  height: 90px;
+  left: 25%;
+  animation-duration: 10s;
+  animation-delay: 4s;
+}
+.bubble:nth-child(11) {
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  animation-duration: 5s;
+}
+.bubble:nth-child(12) {
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(13) {
+  width: 50px;
+  height: 50px;
+  left: 35%;
+  animation-duration: 5s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(14) {
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+.bubble:nth-child(15) {
+  width: 35px;
+  height: 35px;
+  left: 55%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(16) {
+  width: 45px;
+  height: 45px;
+  left: 65%;
+  animation-duration: 4s;
+  animation-delay: 3s;
+}
+.bubble:nth-child(17) {
+  width: 90px;
+  height: 90px;
+  left: 70%;
+  animation-duration: 5s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(18) {
+  width: 25px;
+  height: 25px;
+  left: 80%;
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(19) {
+  width: 15px;
+  height: 15px;
+  left: 70%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(20) {
+  width: 90px;
+  height: 90px;
+  left: 25%;
+  animation-duration: 3s;
+  animation-delay: 4s;
+}
+@keyframes rise {
+  0% {
     bottom: -100px;
-    width: 40px;
-    height: 40px;
-    background: #f1f1f1;
-    border-radius: 50%;
-    opacity: 0.5;
-    animation: rise 5s infinite ease-in;
+    transform: translateX(0);
   }
-  .bubble:nth-child(1) {
-    width: 40px;
-    height: 40px;
-    left: 10%;
-    animation-duration: 5s;
+  50% {
+    transform: translate(100px);
   }
-  .bubble:nth-child(2) {
-    width: 20px;
-    height: 20px;
-    left: 20%;
-    animation-duration: 5s;
-    animation-delay: 1s;
+  100% {
+    bottom: 1080px;
+    transform: translateX(-200px);
   }
-  .bubble:nth-child(3) {
-    width: 50px;
-    height: 50px;
-    left: 35%;
-    animation-duration: 5s;
-    animation-delay: 2s;
-  }
-  .bubble:nth-child(4) {
-    width: 80px;
-    height: 80px;
-    left: 50%;
-    animation-duration: 5s;
-    animation-delay: 0s;
-  }
-  .bubble:nth-child(5) {
-    width: 35px;
-    height: 35px;
-    left: 55%;
-    animation-duration: 6s;
-    animation-delay: 1s;
-  }
-  .bubble:nth-child(6) {
-    width: 45px;
-    height: 45px;
-    left: 65%;
-    animation-duration: 8s;
-    animation-delay: 3s;
-  }
-  .bubble:nth-child(7) {
-    width: 90px;
-    height: 90px;
-    left: 70%;
-    animation-duration: 12s;
-    animation-delay: 2s;
-  }
-  .bubble:nth-child(8) {
-    width: 25px;
-    height: 25px;
-    left: 80%;
-    animation-duration: 6s;
-    animation-delay: 2s;
-  }
-  .bubble:nth-child(9) {
-    width: 15px;
-    height: 15px;
-    left: 70%;
-    animation-duration: 5s;
-    animation-delay: 1s;
-  }
-  .bubble:nth-child(10) {
-    width: 90px;
-    height: 90px;
-    left: 25%;
-    animation-duration: 10s;
-    animation-delay: 4s;
-  }
-  .bubble:nth-child(11) {
-    width: 40px;
-    height: 40px;
-    left: 10%;
-    animation-duration: 5s;
-  }
-  .bubble:nth-child(12) {
-    width: 20px;
-    height: 20px;
-    left: 20%;
-    animation-duration: 5s;
-    animation-delay: 1s;
-  }
-  .bubble:nth-child(13) {
-    width: 50px;
-    height: 50px;
-    left: 35%;
-    animation-duration: 5s;
-    animation-delay: 2s;
-  }
-  .bubble:nth-child(14) {
-    width: 80px;
-    height: 80px;
-    left: 50%;
-    animation-duration: 5s;
-    animation-delay: 0s;
-  }
-  .bubble:nth-child(15) {
-    width: 35px;
-    height: 35px;
-    left: 55%;
-    animation-duration: 6s;
-    animation-delay: 1s;
-  }
-  .bubble:nth-child(16) {
-    width: 45px;
-    height: 45px;
-    left: 65%;
-    animation-duration: 4s;
-    animation-delay: 3s;
-  }
-  .bubble:nth-child(17) {
-    width: 90px;
-    height: 90px;
-    left: 70%;
-    animation-duration: 5s;
-    animation-delay: 2s;
-  }
-  .bubble:nth-child(18) {
-    width: 25px;
-    height: 25px;
-    left: 80%;
-    animation-duration: 6s;
-    animation-delay: 2s;
-  }
-  .bubble:nth-child(19) {
-    width: 15px;
-    height: 15px;
-    left: 70%;
-    animation-duration: 5s;
-    animation-delay: 1s;
-  }
-  .bubble:nth-child(20) {
-    width: 90px;
-    height: 90px;
-    left: 25%;
-    animation-duration: 3s;
-    animation-delay: 4s;
-  }
-  @keyframes rise {
-    0% {
-      bottom: -100px;
-      transform: translateX(0);
-    }
-    50% {
-      transform: translate(100px);
-    }
-    100% {
-      bottom: 1080px;
-      transform: translateX(-200px);
-    }
-  }
-  
+}

@@ -71,7 +71,7 @@ const HomePage = () => {
             height: "250px",
             display: "flex",
             alignItems: "center",
-            justifyContent: "center",
+            justifyContent: "flex-start",
             flexDirection: "column",
           }}
         >
@@ -97,7 +97,7 @@ const HomePage = () => {
             flexDirection: "column",
           }}
         >
-          <h3>Our Vison</h3>
+          <h3>Our Vision</h3>
           <p style={{ fontSize: "18px" }}>
             Our vision is to create software which solves convetional education
             problems and reach out to every corner so noone can deprived from
