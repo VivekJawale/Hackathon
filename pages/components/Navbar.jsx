@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link"
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -41,61 +41,60 @@ const Navbar = () => {
         }}
       >
         <div style={{ width: "20%", height: "50px", marginRight: "10px" }}>
-        <Link href="/">
-      
-          <button
-            style={{
-              cursor: "pointer",
-              fontSize: "16px",
-              fontWeight: "bold",
-              color: "#fff",
-              border: "1px solid #0dccc5",
-              width: "100%",
-              height: "80%",
-              borderRadius: "5px",
-              background: "#0dccc5",
-            }}
-          >
-            HOME
-          </button>
+          <Link href="/">
+            <button
+              style={{
+                cursor: "pointer",
+                fontSize: "16px",
+                fontWeight: "bold",
+                color: "#fff",
+                border: "1px solid #0dccc5",
+                width: "100%",
+                height: "80%",
+                borderRadius: "5px",
+                background: "#0dccc5",
+              }}
+            >
+              HOME
+            </button>
           </Link>
         </div>
         <div style={{ width: "20%", height: "50px", marginRight: "10px" }}>
-        <Link href="/login">
-          <button
-            style={{
-              cursor: "pointer",
-              fontSize: "16px",
-              fontWeight: "bold",
-              color: "#fff",
-              border: "1px solid #0dccc5",
-              width: "100%",
-              height: "80%",
-              borderRadius: "5px",
-              background: "#0dccc5",
-            }}
-          >
-            LOGIN
-          </button>
+          <Link href="/login">
+            <button
+              style={{
+                cursor: "pointer",
+                fontSize: "16px",
+                fontWeight: "bold",
+                color: "#fff",
+                border: "1px solid #0dccc5",
+                width: "100%",
+                height: "80%",
+                borderRadius: "5px",
+                background: "#0dccc5",
+              }}
+            >
+              LOGIN
+            </button>
           </Link>
         </div>
         <div style={{ width: "20%", height: "50px", marginRight: "10px" }}>
-        <Link href="/about">
-          <button
-            style={{
-              cursor: "pointer",
-              fontSize: "16px",
-              fontWeight: "bold",
-              color: "#fff",
-              border: "1px solid #0dccc5",
-              width: "100%",
-              height: "80%",
-              borderRadius: "5px",
-              background: "#0dccc5",
-            }}
-          >
-            ABOUT US
-          </button>
+          <Link href="/about">
+            <button
+              style={{
+                cursor: "pointer",
+                fontSize: "16px",
+                fontWeight: "bold",
+                color: "#fff",
+                border: "1px solid #0dccc5",
+                width: "100%",
+                height: "80%",
+                borderRadius: "5px",
+                background: "#0dccc5",
+              }}
+            >
+              ABOUT US
+            </button>
           </Link>
         </div>
       </div>
