@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "server.js", "pages/components/test.js", "Wb/server.js", "pages/Videocall.jsx", "pages/providers/Peer.tsx"],
   "exclude": ["node_modules"]
 }
