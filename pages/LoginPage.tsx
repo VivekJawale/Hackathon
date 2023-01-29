@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import swal from 'sweetalert';
+import { useRouter } from 'next/navigation';
 
 type LoginPayload={
     email:string,
@@ -17,6 +18,7 @@ const LoginPage = () => {
     const [pass,setPasss]=useState("");
     const [role,setRole]=useState("Student");
     const [name,setName]=useState("");
+    const router = useRouter();
     const [payload,setPayload]=useState({
         email:"",
         password:""
@@ -43,6 +45,13 @@ const LoginPage = () => {
             })
         }
 
+        swal({
+          title:"Login Successfull",
+          icon:"success"
+        })
+
+        router.push(`/HomePage`)
+
          let loginPayload={
               email:email,
               password:pass
@@ -64,6 +73,14 @@ const LoginPage = () => {
             password:pass,
             role:role
         }
+
+        swal({
+          title:"Signup Successfull",
+          icon:"success"
+        })
+
+        setlogin(true);
+        setSignup(false)
     }
 
   return (
